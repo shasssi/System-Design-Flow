@@ -1,9 +1,36 @@
-/* 
-    - Consistent Hashing
-        - Circular Ring 
-        - Virtual Nodes
+##### Hashing  
+- Horizontal Scaling : Data distributed across many machines
+- Data should be evenly distributed across servers.
+- Hashing: Common method for distributiong data among servers
+  - Modulus operation againgst hash function against the number_of_servers
+  - Impact is very drastic in case of server addition or deletion
+    - Rebalacing: Most of the keys need to be redistributed - almost all object
+    - this triggers a storm of misses and lots of object to be moved.
+
+##### Consistent Hashing  
+- Consistent Hashing : try to mitigate the above issue
+  - Here we also hash the server name in addition to object keys.
+  - we create a hash ring and we place the servers on the ring.
+  - we hash the key and map in the ring.
+  - To locate the server in a ring, we go clockwise to look for server.
+
+  - Adding/Deleting a server only requires redistribution of a fraction of the keys.
+  - Potential Issue: distribution of the keys to the servers is slightly uneven in case of 
+    - more gap b/w two servers
+    - all servers are side by side (means less gap)
+
+##### Virtual Nodes   
+- Virtual Nodes: The idea is to have each server appear at multiple locations in the ring
+  - eg. we can three servers for each one located in the ring.
+  - Solves the issue of uneven distributions.
+  
+##### Real world use cases
+- NoSQL databases - Amazon Dyanmo DB, Apache Cassandra (Data Partioning).
+- CDN (Content Delivery Network) - Distribute web contents evenly.
+- Load Balancers - Distribute persistent connections evenly across BE servers.
 */
 
+```
 class ConsistentHashing {
   constructor() {
     this.N = 100000;
@@ -103,3 +130,4 @@ ch.lookupServer(
 );
 console.log(ch.keyNServerMap);
 console.log(ch.checkServerLoad());
+```
