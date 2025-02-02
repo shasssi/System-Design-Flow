@@ -7,3 +7,4 @@
 
 ### [Database - Concurrency Control in Distributed System](https://github.com/shasssi/System-Design-Flow/blob/main/database-concurrency-control.md)
 - [Optimistic & Pessimistic Concurrency Lock](https://www.youtube.com/watch?v=D3XhDu--uoI)
+- [Two Phase Locking](https://youtu.be/lceenm34m-w)
