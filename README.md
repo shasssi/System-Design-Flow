@@ -19,7 +19,7 @@
 18. Vertical Partioning
 19. Caching
 20. Denormalization
-21. CAP Theorem
+21. CAP Theorem (Required in Distributed System with Replicated Data)
 22. Blob Storage
 23. CDN
 24. WebSockets
