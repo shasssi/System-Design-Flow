@@ -27,7 +27,7 @@
 26. Microservices
 27. Message Queues
 28. Rate Limiting
-29. API Gateways
+29. API Gateways (Load Balancer, Logging, Monitoring, Authentication, Rate Limiter)
 30. Idempotency
 
 ### [Consistent Hashing](https://github.com/shasssi/System-Design-Flow/blob/main/cosistent-hashing.md)
