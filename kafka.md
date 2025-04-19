@@ -13,7 +13,7 @@ Kafka solves this issue - It has HIGH Throughput.
 10. Queue (only one producer -> only one consumer) RabitMQ, SQS
 11. pub/sub (one producer -> can have multiple consumers)
 
-👉 (Sample Code)[https://gist.github.com/piyushgarg-dev/32cadf6420c452b66a9a6d977ade0b01]
+👉 [Sample Code](https://gist.github.com/piyushgarg-dev/32cadf6420c452b66a9a6d977ade0b0)
 
 ##### 👉 Kafka References
   - [Youtube 1](https://www.youtube.com/watch?v=ZJJHm_bd9Zo)
