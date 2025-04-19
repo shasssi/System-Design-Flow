@@ -1,3 +1,9 @@
+##### RabbitMQ and Apache Kafka 
+- They are both message brokers that can send messages between applications.
+- RabbitMQ is a traditional messaging system. Kafta is a Real-time data streaming, event-driven microservices, and log aggregation.
+- RabbitMQ is easier to deploy and maintain.
+-  RabbitMQ is a good choice for event-driven messaging, while Kafka is a good choice for real-time data streaming. 
+
 Genearlly DB has LOW Throughput (operation per second).
 Kafka solves this issue - It has HIGH Throughput.
 ##### 📌 Kafka Concepts
