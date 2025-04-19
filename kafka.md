@@ -1,3 +1,5 @@
+Genearlly DB has LOW Throughput (operation per second).
+Kafka solves the issue - It has HIGH Throughput.
 ##### 📌 Kafka Concepts
 1. Producer
 2. Consumer
